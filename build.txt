@@ -1,0 +1,3 @@
+displayName = Fg Mod
+author = Fg
+version = 0.1

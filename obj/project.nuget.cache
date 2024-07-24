@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "S+y/DrJzFDCTaParv5iicBR0pcKqwSmSWIX5Bzhc47mnnDAT6hs2PmNzg+QAW2pbTH8Hq3764s67WGmcmOk8Pw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Fgmod\\Fgmod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}

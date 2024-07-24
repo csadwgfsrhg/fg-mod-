@@ -1,0 +1,329 @@
+# This file will automatically update with entries for new content after a build and reload
+
+Items: {
+	ManaCleaver: {
+		DisplayName: Mana Cleaver
+		Tooltip: ""
+	}
+
+	ManaStealAlloy: {
+		DisplayName: Mana Steal Alloy
+		Tooltip: ""
+	}
+
+	ManaStealHelmet: {
+		DisplayName: Mana Steal Helmet
+		Tooltip: ""
+	}
+
+	ManaStealChestplate: {
+		DisplayName: Mana Steal Chestplate
+		Tooltip: ""
+	}
+
+	ManaScepter: {
+		DisplayName: Mana Scepter
+		Tooltip: ""
+	}
+
+	ManaStealLeggings: {
+		DisplayName: Mana Steal Leggings
+		Tooltip: ""
+	}
+
+	ManaShark: {
+		DisplayName: Mana Shark
+		Tooltip: ""
+	}
+
+	MarksmenCap: {
+		DisplayName: Marksmen Cap
+		Tooltip: ""
+	}
+
+	MakeshiftCrossbow: {
+		DisplayName: Makeshift Crossbow
+		Tooltip: ""
+	}
+
+	Dagger: {
+		DisplayName: Dagger
+		Tooltip: ""
+	}
+
+	AmethystNecklace: {
+		DisplayName: Amethyst Necklace
+		Tooltip: ""
+	}
+
+	MarksmenChestplate: {
+		DisplayName: Marksmen Chestplate
+		Tooltip: ""
+	}
+
+	MarksmenLeggings: {
+		DisplayName: Marksmen Leggings
+		Tooltip: ""
+	}
+
+	BarbedArrow: {
+		DisplayName: Barbed Arrow
+		Tooltip: ""
+	}
+
+	Basalt: {
+		DisplayName: Basalt
+		Tooltip: ""
+	}
+
+	MoltenAlloyHelmet: {
+		DisplayName: Molten Alloy Helmet
+		Tooltip: ""
+	}
+
+	MoltenAlloyChestplate: {
+		DisplayName: Molten Alloy Chestplate
+		Tooltip: ""
+	}
+
+	MoltenAlloyLeggings: {
+		DisplayName: Molten Alloy Leggings
+		Tooltip: ""
+	}
+
+	MoltenAlloy: {
+		DisplayName: Molten Alloy
+		Tooltip: ""
+	}
+
+	AncientTabletSword: {
+		DisplayName: Ancient Tablet Sword
+		Tooltip: ""
+	}
+
+	UnkeptRemains: {
+		DisplayName: Unkept Remains
+		Tooltip: ""
+	}
+
+	TopazNecklace: {
+		DisplayName: Topaz Necklace
+		Tooltip: ""
+	}
+
+	AmberNecklace: {
+		DisplayName: Amber Necklace
+		Tooltip: ""
+	}
+
+	DiamondNecklace: {
+		DisplayName: Diamond Necklace
+		Tooltip: ""
+	}
+
+	EmeraldNecklace: {
+		DisplayName: Emerald Necklace
+		Tooltip: ""
+	}
+
+	RubyNecklace: {
+		DisplayName: Ruby Necklace
+		Tooltip: ""
+	}
+
+	SapphireNecklace: {
+		DisplayName: Sapphire Necklace
+		Tooltip: ""
+	}
+
+	Gay: {
+		DisplayName: Gay
+		Tooltip: ""
+	}
+
+	PrismaticMist: {
+		DisplayName: Prismatic Mist
+		Tooltip: ""
+	}
+
+	test: {
+		DisplayName: test
+		Tooltip: ""
+	}
+
+	LifeDrainMask: {
+		DisplayName: Life Drain Mask
+		Tooltip: ""
+	}
+
+	ElectroTherapy: {
+		DisplayName: Electro Therapy
+		Tooltip: ""
+	}
+
+	Obliterator: {
+		DisplayName: Obliterator
+		Tooltip: ""
+	}
+
+	Cleaver: {
+		DisplayName: Cleaver
+		Tooltip: ""
+	}
+
+	LuminescentNecklace: {
+		DisplayName: Luminescent Necklace
+		Tooltip: ""
+	}
+
+	MeatSheild: {
+		DisplayName: Meat Sheild
+		Tooltip: ""
+	}
+
+	PanicShield: {
+		DisplayName: Panic Shield
+		Tooltip: ""
+	}
+
+	ShieldOfVitality: {
+		DisplayName: Shield Of Vitality
+		Tooltip: ""
+	}
+
+	ObsidianScythe: {
+		DisplayName: Obsidian Scythe
+		Tooltip: ""
+	}
+
+	CritterSpawner: {
+		DisplayName: Critter Spawner
+		Tooltip: ""
+	}
+
+	RawTypholite: {
+		DisplayName: Raw Typholite
+		Tooltip: ""
+	}
+
+	Typholite: {
+		DisplayName: Typholite
+		Tooltip: ""
+	}
+
+	MoltenOre: {
+		DisplayName: Molten Ore
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	ManaCleaverSwing.DisplayName: Mana Cleaver Swing
+	ManaBomb.DisplayName: Mana Bomb
+	ManaExplosion.DisplayName: Mana Explosion
+	ManaBullet.DisplayName: Mana Bullet
+	ManaBlast.DisplayName: Mana Blast
+	DaggerThrown.DisplayName: Dagger Thrown
+	Cut.DisplayName: Cut
+	Shimmer.DisplayName: Shimmer
+	BarbedArrow.DisplayName: Barbed Arrow
+	DaggerCut.DisplayName: Dagger Cut
+	sand.DisplayName: sand
+	SandSpawner.DisplayName: Sand Spawner
+	SandVulture.DisplayName: Sand Vulture
+	Marked.DisplayName: Marked
+	GemFire.DisplayName: Gem Fire
+	MoltenEmber.DisplayName: Molten Ember
+	InfernalCut.DisplayName: Infernal Cut
+	Elekwhip.DisplayName: Elekwhip
+	ElectricAura.DisplayName: Electric Aura
+	LifeSteal.DisplayName: Life Steal
+	ElectroBall.DisplayName: Electro Ball
+	BloodShot.DisplayName: Blood Shot
+	BloodBurst.DisplayName: Blood Burst
+	MagmaLaser.DisplayName: Magma Laser
+	EarthShard.DisplayName: Earth Shard
+	CleaverProj.DisplayName: Cleaver Proj
+	EnchantedSword.DisplayName: Enchanted Sword
+	ObsidianScytheProjectile.DisplayName: Obsidian Scythe Projectile
+	ExampleCritterHitbox.DisplayName: Example Critter Hitbox
+}
+
+Buffs: {
+	SandVultureBuff: {
+		DisplayName: Sand Vulture Buff
+		Description: Mods.Fgmod.Buffs.SandVultureBuff.Description
+	}
+
+	Shining: {
+		DisplayName: Shining
+		Description: Mods.Fgmod.Buffs.Shining.Description
+	}
+
+	MarkBoost: {
+		DisplayName: Mark Boost
+		Description: Mods.Fgmod.Buffs.MarkBoost.Description
+	}
+
+	MarkStrike: {
+		DisplayName: Mark Strike
+		Description: Mods.Fgmod.Buffs.MarkStrike.Description
+	}
+
+	EmberSpawner: {
+		DisplayName: Ember Spawner
+		Description: Mods.Fgmod.Buffs.EmberSpawner.Description
+	}
+
+	Elektric: {
+		DisplayName: Elektric
+		Description: Mods.Fgmod.Buffs.Elektric.Description
+	}
+
+	VampireAura: {
+		DisplayName: Vampire Aura
+		Description: Mods.Fgmod.Buffs.VampireAura.Description
+	}
+
+	LifeDrain: {
+		DisplayName: Life Drain
+		Description: Mods.Fgmod.Buffs.LifeDrain.Description
+	}
+
+	MeatBarrier: {
+		DisplayName: Meat Barrier
+		Description: Mods.Fgmod.Buffs.MeatBarrier.Description
+	}
+}
+
+NPCs: {
+	BloodMage.DisplayName: Blood Mage
+	Deer.DisplayName: Deer
+	FleshWatcher.DisplayName: Flesh Watcher
+	TheSludge.DisplayName: The Sludge
+	Sludgling.DisplayName: Sludgling
+	ExampleCritter.DisplayName: Example Critter
+}
+
+Configs: {
+	FGClientconfig: {
+		DisplayName: F G Clientconfig
+
+		ScreenShake: {
+			Label: Screen Shake
+			Tooltip: ""
+		}
+
+		EnemyFishing: {
+			Label: Enemy Fishing
+			Tooltip: ""
+		}
+	}
+}
+
+DamageClasses: {
+	HarvestDamageClass.DisplayName: Harvest Damage Class
+	HarvestDamage.DisplayName: Harvest Damage
+	HarvesterDamageClass.DisplayName: Harvester Damage Class
+	Harvester.DisplayName: Harvester
+}

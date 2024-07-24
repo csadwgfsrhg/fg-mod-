@@ -43,29 +43,17 @@ Bosses:
 	-dungeon spirit bone fish mini boss
 	-fishing mini bosses
 	
-
-world gen:
-	- ash in hell will mostly be replaced with basalt
-	-ash, hellstone are both getting resprited
-	-typholite generation in hell.
-
 Reworks:
 	-Fishing rods deal harvest damage and  will latch on to enemies and deal continuous damage until reeled,
 	reeling at right time causes phantom fish to spawn and hunger gain.  
 	-hellstone armor/items reworked
 	
 	enemies can be fished up when fishing now, with respective special drops (hopefuly one for every biome) :
-		-flesh walker (crimson)
-		-the sludge (corruption)
 		-sea monster (forest) 
 		
 Other stuff:
-	- obsidian/barbed arrows
 	- typholite set
-	- marksmen set
-	- mana steal set
 	- summoner set????
-	- gem necklaces 
 
 
 Ideas:

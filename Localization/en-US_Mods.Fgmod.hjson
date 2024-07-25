@@ -215,6 +215,16 @@ Items: {
 		DisplayName: Molten Ore
 		Tooltip: ""
 	}
+
+	VeinBuster: {
+		DisplayName: Vein Buster
+		Tooltip: ""
+	}
+
+	ObsidianArrow: {
+		DisplayName: Obsidian Arrow
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -247,6 +257,7 @@ Projectiles: {
 	EnchantedSword.DisplayName: Enchanted Sword
 	ObsidianScytheProjectile.DisplayName: Obsidian Scythe Projectile
 	ExampleCritterHitbox.DisplayName: Example Critter Hitbox
+	ObsidianArrow.DisplayName: Obsidian Arrow
 }
 
 Buffs: {

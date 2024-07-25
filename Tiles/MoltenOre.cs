@@ -18,12 +18,13 @@ namespace Fgmod.Tiles
             Main.tileBlockLight[Type] = true;
             HitSound = SoundID.Tink;
             MinPick = 65;
-            MineResist = 3f;
+            MineResist = 2f;
             Main.tileBlendAll[Type] = true;
 
 
             AddMapEntry(new Color(64, 43, 113));
         }
+     
         public override void DrawEffects(int i, int j, SpriteBatch spriteBatch, ref TileDrawInfo drawData)
         {
             if (Main.rand.NextBool(200))
@@ -37,10 +38,7 @@ namespace Fgmod.Tiles
             Tile tile = Main.tile[i, j];
             tile.LiquidType = LiquidID.Lava;
         }
-        public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)
-        {
-                r = 0.2f;
-        }
+      
     }
 }
           

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fgmod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2de5da9d37e40c3bf92f968467cd332071fb46d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fgmod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fgmod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,12 +2,14 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace Fgmod.Items.Placeable
 {
 	public class MoltenOre : ModItem
 	{
-			public override void SetStaticDefaults() {
+        public static Vector3 LightColor = new Vector3(0.3f, 0.1f, 0.0f);
+        public override void SetStaticDefaults() {
 			Item.ResearchUnlockCount = 100;
 		}
         public override Color? GetAlpha(Color lightColor)

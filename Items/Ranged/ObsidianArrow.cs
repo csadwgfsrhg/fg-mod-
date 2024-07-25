@@ -1,18 +1,17 @@
-﻿using Microsoft.Xna.Framework;
-using System.IO;
+﻿
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-﻿using Fgmod.Projectiles;
+
 
 namespace Fgmod.Items.Ranged
 {
-	public class BarbedArrow : ModItem
+	public class ObsidianArrow : ModItem
 	{
 		
 		public override void SetDefaults()
 		{
-			Item.damage = 0; 
+			Item.damage = 2; 
 			Item.DamageType = DamageClass.Ranged;
 			Item.width = 10;
 			Item.crit = 4;
@@ -21,15 +20,15 @@ namespace Fgmod.Items.Ranged
 			Item.consumable = true; 
 			Item.knockBack = 1.5f;
 			Item.value = 10;
-			Item.rare = 0;
-			Item.shoot = ModContent.ProjectileType<Projectiles.BarbedArrow>(); 
+			Item.rare = 1;
+			Item.shoot = ModContent.ProjectileType<Projectiles.ObsidianArrow>(); 
 			Item.ammo = AmmoID.Arrow; 
 		}
 		public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe(50);
             recipe.AddRecipeGroup("Wood", 5);
-            recipe.AddRecipeGroup("IronBar", 1);
+            recipe.AddIngredient(ItemID.Obsidian, 2);
             recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}

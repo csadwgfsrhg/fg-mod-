@@ -1,11 +1,9 @@
-﻿using Microsoft.Xna.Framework;
-using System.IO;
+﻿
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 ﻿using Fgmod.Projectiles;
-using Microsoft.CodeAnalysis;
-using Terraria.DataStructures;
+
 
 namespace Fgmod.Items.Melee
 {

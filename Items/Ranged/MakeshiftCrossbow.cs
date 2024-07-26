@@ -30,9 +30,7 @@ namespace Fgmod.Items.Ranged
 			Item.useAnimation = 40;
 			Item.shoot = 1;
 		}
-		public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback) {
-			
-		}
+		
 		public override Vector2? HoldoutOffset() {
 			return new Vector2(-6f, -2f);
 		}

@@ -49,8 +49,8 @@ namespace Fgmod.GlobalClasses
         {
             Item.damage = 1;
             Item.DamageType = ModContent.GetInstance<HarvestDamage>();
-            Item.useTime = 60;
-            Item.useAnimation = 60;
+            Item.useTime = 30;
+            Item.useAnimation = 30;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 6;
             Item.value = 10000;
@@ -69,7 +69,7 @@ namespace Fgmod.GlobalClasses
             private Player Owner => Main.player[Projectile.owner];
             public sealed override void SetDefaults()
             {
-                Projectile.timeLeft = 60;
+                Projectile.timeLeft = 30;
                 Projectile.penetrate = -1;
                 Projectile.Opacity = 100;
                 Projectile.knockBack = 0;
@@ -122,17 +122,11 @@ namespace Fgmod.GlobalClasses
                 Vector2 armPosition = Owner.GetFrontHandPosition(Player.CompositeArmStretchAmount.Full, Projectile.rotation - (float)Math.PI / 2); // get position of hand
 
                 armPosition.Y += Owner.gfxOffY;
-                if (Projectile.ai[0] < 9 && drawback == 0)
-                {
-                    Projectile.ai[0] *= 1.1f;
               
-                }
-                else
-                {
-                    drawback = 1;
+                    Projectile.ai[0] *= 1.07f;
+              
+              
 
-                    Projectile.ai[0] -= .2f;
-                }
 
 
                 Owner.heldProj = Projectile.whoAmI;

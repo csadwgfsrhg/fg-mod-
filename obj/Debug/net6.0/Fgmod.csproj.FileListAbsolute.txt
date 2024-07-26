@@ -133,3 +133,4 @@ C:\Users\User\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Fgmod\o
 C:\Users\User\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Fgmod\obj\Debug\net6.0\refint\Fgmod.dll
 C:\Users\User\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Fgmod\obj\Debug\net6.0\Fgmod.pdb
 C:\Users\User\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Fgmod\obj\Debug\net6.0\ref\Fgmod.dll
+C:\Users\User\OneDrive\Documents\My Games\Terraria\tModLoader\ModSources\Fgmod\obj\Debug\net6.0\Fgmod.sourcelink.json

@@ -22,7 +22,7 @@ namespace Fgmod.Tiles
             Main.tileBlendAll[Type] = true;
 
 
-            AddMapEntry(new Color(64, 43, 113));
+            AddMapEntry(new Color(239, 122, 47));
         }
      
         public override void DrawEffects(int i, int j, SpriteBatch spriteBatch, ref TileDrawInfo drawData)

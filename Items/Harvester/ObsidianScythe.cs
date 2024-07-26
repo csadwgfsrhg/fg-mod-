@@ -16,9 +16,10 @@ namespace Fgmod.Items.Harvester
         public override void SetStaticDefaults()
         {
             Item.width = 54;
-            Item.damage = 20;
+            Item.damage = 16;
             Item.height = 42;
-        
+            Item.rare = 1;
+
         }
 
 
@@ -28,7 +29,6 @@ namespace Fgmod.Items.Harvester
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.Obsidian, 100);
-            recipe.AddIngredient(ItemID.ShadowScale, 10);
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
         }

@@ -215,6 +215,41 @@ Items: {
 		DisplayName: Molten Ore
 		Tooltip: ""
 	}
+
+	VeinBuster: {
+		DisplayName: Vein Buster
+		Tooltip: ""
+	}
+
+	ObsidianArrow: {
+		DisplayName: Obsidian Arrow
+		Tooltip: ""
+	}
+
+	Pebble: {
+		DisplayName: Pebble
+		Tooltip: ""
+	}
+
+	ShittyBlunderBuss: {
+		DisplayName: Shitty Blunder Buss
+		Tooltip: ""
+	}
+
+	Rock: {
+		DisplayName: Rock
+		Tooltip: ""
+	}
+
+	Rubble: {
+		DisplayName: Rubble
+		Tooltip: ""
+	}
+
+	LavaSword: {
+		DisplayName: Lava Sword
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -247,6 +282,11 @@ Projectiles: {
 	EnchantedSword.DisplayName: Enchanted Sword
 	ObsidianScytheProjectile.DisplayName: Obsidian Scythe Projectile
 	ExampleCritterHitbox.DisplayName: Example Critter Hitbox
+	ObsidianArrow.DisplayName: Obsidian Arrow
+	DirtShot.DisplayName: Dirt Shot
+	Rubble.DisplayName: Rubble
+	IceAura.DisplayName: Ice Aura
+	LavaSwordProjectile.DisplayName: Lava Sword Projectile
 }
 
 Buffs: {

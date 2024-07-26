@@ -13,7 +13,7 @@ namespace Fgmod.Gen
 
         protected override void ApplyPass(GenerationProgress progress, GameConfiguration configuration)
         {
-            progress.Message = "Spawning penis Ores";
+            progress.Message = "Altering Hell";
 
 
             for (int i = 0; i < Main.maxTilesX; i++)
@@ -21,20 +21,11 @@ namespace Fgmod.Gen
                 for (int j = 0; j < Main.maxTilesY; j++)
                 {
                     Tile tile = Main.tile[i, j];
-                    if (tile.TileType == TileID.Ash)
+                    if (tile.TileType == TileID.Ash )
                         tile.TileType = (ushort)ModContent.TileType<Basalt>();
                 }
             }
-            for (int i = 0; i < Main.maxTilesX; i++)
-            {
-                for (int j = 0; j < Main.maxTilesY; j++)
-                {
-                    Tile tile = Main.tile[i, j];
-                    if (tile.TileType == TileID.Hellstone)
 
-                        tile.TileType = (ushort)ModContent.TileType<MoltenOre>();
-                }
-            }
 
                 int maxToSpawn = (Main.maxTilesX / 8);
             int numSpawned = 0;
@@ -45,6 +36,8 @@ namespace Fgmod.Gen
                 int y = WorldGen.genRand.Next(Main.maxTilesY - 200, Main.maxTilesY);
 
                 Tile tile = Framing.GetTileSafely(x, y);
+
+
                 if (tile.TileType == ModContent.TileType<Basalt>())
                 {
                   
@@ -56,11 +49,15 @@ namespace Fgmod.Gen
                 if (tile.TileType == ModContent.TileType<TypholiteVar>())
                 
                     {
-                        WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 9), WorldGen.genRand.Next(8, 15), ModContent.TileType<Typholite>());
+                        WorldGen.TileRunner(x, y, WorldGen.genRand.Next(4, 10), WorldGen.genRand.Next(9, 15), ModContent.TileType<Typholite>());
                     }
+                if (tile.TileType == ModContent.TileType<Typholite>())
 
+                {
+                    WorldGen.digTunnel(x, y, 0, 0, WorldGen.genRand.Next(2, 3), WorldGen.genRand.Next(1, 3), true);
+                }
 
-                    numSpawned++;
+                numSpawned++;
                 }
 
              

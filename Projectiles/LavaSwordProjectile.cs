@@ -11,7 +11,7 @@ using Fgmod.Particles;
 
 namespace Fgmod.Projectiles
 {
-	public class EnchantedSword : ModProjectile
+	public class LavaSwordProjectile : ModProjectile
 	{
 		public override void SetStaticDefaults() {
 			Main.projFrames[Projectile.type] = 2;
@@ -21,29 +21,36 @@ namespace Fgmod.Projectiles
 			Projectile.width = 10;
 			Projectile.height = 10;
 			Projectile.friendly = true; 
-			Projectile.timeLeft = 50; 
-			Projectile.penetrate = 2; 
+			Projectile.timeLeft = 70; 
+			Projectile.penetrate = 6; 
 			Projectile.tileCollide = false;
 			Projectile.usesLocalNPCImmunity = true;
 			Projectile.localNPCHitCooldown = 10;
 			Projectile.DamageType = DamageClass.Melee; 
-			Projectile.aiStyle = 0;
+			Projectile.aiStyle = 14;
 			}
-
-		public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        public override void OnSpawn(IEntitySource source)
+        {
+			Projectile.damage  = Projectile.damage / 3;
+        }
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
 		{
 
 			{
-				for (int i = 0; i < Main.rand.Next(8, 12); i++)
+				for (int i = 0; i < Main.rand.Next(20, 30); i++)
 				{
-					Dust.NewDust(Projectile.position, 28, 28, ModContent.DustType<ManaSpark>());
-					Lighting.AddLight(Projectile.position, .2f, .3f, .5f);
-				}
+					Dust.NewDust(Projectile.position, 50, 50, ModContent.DustType<HellEmber>());
+                    Projectile.width = 50;
+                    Projectile.height = 50;
+                    SoundEngine.PlaySound(SoundID.Item14, Projectile.position);
+                    Projectile.Kill();
+
+                }
 			}
 		}
         public override void AI() {
             Projectile.rotation = Projectile.velocity.ToRotation();
-            Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, ModContent.DustType<ManaSpark>());
+            Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, ModContent.DustType<HellEmber>());
             Projectile.ai[0] += 1f;
 
             Projectile.velocity *= .95f;

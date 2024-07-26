@@ -15,7 +15,7 @@ namespace Fgmod.Particles
 			public override bool Update(Dust dust) { 
 			dust.scale *= 0.92f;
             dust.position.Y -= 1f;
-            Lighting.AddLight(dust.position, .5f, .1f, .2f);
+            Lighting.AddLight(dust.position, .5f, .3f, .1f);
 
             if (dust.scale < 0.2f) {
 				dust.active = false;

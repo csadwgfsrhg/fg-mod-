@@ -20,7 +20,7 @@ namespace Fgmod.Tiles
             Main.tileBlendAll[Type] = true;
 
           
-            AddMapEntry(new Color(64, 43, 113));
+            AddMapEntry(new Color(136, 71, 49));
 		}
        
 

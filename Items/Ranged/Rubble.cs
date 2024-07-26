@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace Fgmod.Items.Ranged
 {
-	public class BarbedArrow : ModItem
+	public class Rubble : ModItem
 	{
 		
 		public override void SetDefaults()
@@ -22,15 +22,14 @@ namespace Fgmod.Items.Ranged
 			Item.knockBack = 1.5f;
 			Item.value = 10;
 			Item.rare = 0;
-			Item.shoot = ModContent.ProjectileType<Projectiles.BarbedArrow>(); 
-			Item.ammo = AmmoID.Arrow; 
-		}
+            Item.shoot = ModContent.ProjectileType<Projectiles.Rubble>();
+            Item.ammo = Item.type;
+        }
 		public override void AddRecipes()
 		{
-			Recipe recipe = CreateRecipe(50);
-            recipe.AddRecipeGroup("Wood", 5);
-            recipe.AddRecipeGroup("IronBar", 1);
-            recipe.AddTile(TileID.Anvils);
+			Recipe recipe = CreateRecipe(30);
+            recipe.AddIngredient(ItemID.DirtBlock, 10);
+            recipe.AddIngredient(ItemID.StoneBlock, 10);
 			recipe.Register();
 		}
 	}

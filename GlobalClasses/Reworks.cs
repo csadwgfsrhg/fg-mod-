@@ -1,33 +1,36 @@
 
 
 
+using Fgmod.Items.Accessories;
+using Fgmod.Items.Harvester;
 using Fgmod.Items.Ranged;
 using Fgmod.Projectiles;
 
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 
 
 
-
-
 namespace Fgmod.GlobalClasses
 {
+
     public class EnchantedSword : GlobalItem
     {
-        public override void SetDefaults(Item Item)
+
+        public override void SetDefaults(Item item)
         {
-            if (Item.type == ItemID.EnchantedSword)
+            if (item.type == ItemID.EnchantedSword)
             {
-                // Texture = ModLoader.GetTexture("Fgmod/Items/melee/EnchantedSword");
-                Item.damage = 15;
-                Item.useTime = 54;
-                Item.shootSpeed = 12;
-                Item.useAnimation = 27;
-                 Item.shoot = ModContent.ProjectileType<Projectiles.EnchantedSword>();
+              
+                item.damage = 15;
+                item.useTime = 54;
+                item.shootSpeed = 12;
+                item.useAnimation = 27;
+                 item.shoot = ModContent.ProjectileType<Projectiles.EnchantedSword>();
             }
 
         }
@@ -129,6 +132,29 @@ namespace Fgmod.GlobalClasses
             }
         }
     }
+
+
+
+
+
+    public class NpcLoot : GlobalNPC
+    {
+
+        public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
+        {
+            if (npc.type == NPCID.Zombie)
+            {
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BeatingHeart>(), 10));
+            }
+                if (npc.type == NPCID.EyeofCthulhu)
+            {
+              
+                npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<EnchantedScythe>()));
+            }
+        }
+    }
+
+
 }
 
 

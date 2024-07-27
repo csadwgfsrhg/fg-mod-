@@ -16,11 +16,44 @@ using Terraria.GameContent;
 
 namespace Fgmod.GlobalClasses
 {
+    public class HarvestCharge : ModPlayer
+    {
+        public int HungerMax = 50;
+        public int Hunger = 0;
+        public override void DrawEffects(PlayerDrawSet drawInfo, ref float r, ref float g, ref float b, ref float a, ref bool fullBright)
+        {
+       if (Hunger > HungerMax)
+            {
+                 Hunger = HungerMax;
+            }
+            if (Hunger >= 10 && Main.rand.NextBool(5))
+            {
+              
+                    Dust.NewDust(Player.position, Player.width, Player.height, DustID.Blood);
+               
+
+            }
+            if (Hunger >= 25)
+            {
+                if (Hunger >= 10 && Main.rand.NextBool(2))
+                    Dust.NewDust(Player.position, Player.width, Player.height, DustID.Blood);
+               
+
+            }
+            if (Hunger >= 50)
+            {
+                
+                    Dust.NewDust(Player.position, Player.width, Player.height, DustID.Blood);
+                
+
+            }
 
 
+        }
 
+    }
 
-    public class HarvestDamage : DamageClass
+        public class HarvestDamage : DamageClass
     {
         public override bool UseStandardCritCalcs => true;
 
@@ -49,8 +82,6 @@ namespace Fgmod.GlobalClasses
         {
             Item.damage = 1;
             Item.DamageType = ModContent.GetInstance<HarvestDamage>();
-            Item.useTime = 30;
-            Item.useAnimation = 30;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 6;
             Item.value = 10000;
@@ -59,13 +90,12 @@ namespace Fgmod.GlobalClasses
             Item.autoReuse = true;
             Item.noMelee = true;
             Item.noUseGraphic = true;
-            Item.shoot = ModContent.ProjectileType<ObsidianScytheProjectile>();
             SetStaticDefaults();
         }
     }
         public abstract class ScytheProj : ModProjectile
         {
-         
+    
             private Player Owner => Main.player[Projectile.owner];
             public sealed override void SetDefaults()
             {
@@ -78,7 +108,8 @@ namespace Fgmod.GlobalClasses
                 Projectile.knockBack = 2;
                 Projectile.tileCollide = false;
                 Projectile.aiStyle = -1;
-                Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 999999;
+            Projectile.usesLocalNPCImmunity = true;
                 SetStaticDefaults();
 
 
@@ -111,19 +142,27 @@ namespace Fgmod.GlobalClasses
               
                 return false;
             }
-            int drawback = 0;
-            private ref float InitialAngle => ref Projectile.ai[1];
-            public override string Texture => "Fgmod/Items/Harvester/ObsidianScythe";
+        bool canharvest = true;
+        bool landhit = false;
+        int swingspeed = 0;
+        private ref float InitialAngle => ref Projectile.ai[1];
+          
             public sealed override void AI()
             {
-                Projectile.rotation = Projectile.spriteDirection * Projectile.ai[0];
+            if (Projectile.spriteDirection > 0)
+            {
+                Projectile.rotation = Projectile.spriteDirection * Projectile.ai[0] + 180;
+            }
+            else { Projectile.rotation = Projectile.spriteDirection * Projectile.ai[0]; }
+           
+
                 Player player = Main.player[Projectile.owner];
                 Owner.SetCompositeArmFront(true, Player.CompositeArmStretchAmount.Full, Projectile.rotation - MathHelper.ToRadians(90f));
                 Vector2 armPosition = Owner.GetFrontHandPosition(Player.CompositeArmStretchAmount.Full, Projectile.rotation - (float)Math.PI / 2); // get position of hand
 
                 armPosition.Y += Owner.gfxOffY;
               
-                    Projectile.ai[0] *= 1.07f;
+                    Projectile.ai[0] *= 1f + 2f/(swingspeed);
               
               
 
@@ -131,9 +170,12 @@ namespace Fgmod.GlobalClasses
 
                 Owner.heldProj = Projectile.whoAmI;
                 Projectile.Center = armPosition;
-
-              
+            if (landhit == true)
+            {
+                player.GetModPlayer<HarvestCharge>().Hunger +=  swingspeed / 6;
+                  landhit = false;
             }
+        }
             public sealed override bool? Colliding(Rectangle projHitbox, Rectangle targetHitbox)
             {
                 Vector2 start = Owner.MountedCenter;
@@ -141,14 +183,35 @@ namespace Fgmod.GlobalClasses
                 float collisionPoint = 0f;
                 return Collision.CheckAABBvLineCollision(targetHitbox.TopLeft(), targetHitbox.Size(), start, end, 15f * Projectile.scale, ref collisionPoint);
             }
-            public sealed override void OnSpawn(IEntitySource source)
+        public sealed override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
+        {
+            
+            modifiers.HitDirectionOverride = target.position.X > Owner.MountedCenter.X ? 1 : -1;
+
+        }
+        public sealed override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+
+           
+
+
+            if (canharvest == true)
             {
-              
+                canharvest = false;
+                landhit = true;
+
+            }
+           
+        
+        }
+        public sealed override void OnSpawn(IEntitySource source)
+            {
+            swingspeed = Projectile.timeLeft;
                 Projectile.spriteDirection = Main.MouseWorld.X > Owner.MountedCenter.X ? 1 : -1;
          
                 Projectile.ai[0] += 1.01f;
 
-                InitialAngle = 90f * Projectile.spriteDirection + 135f; // Otherwise, we calculate the angle
+            
             }
             }
 

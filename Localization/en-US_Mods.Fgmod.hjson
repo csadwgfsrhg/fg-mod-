@@ -250,6 +250,31 @@ Items: {
 		DisplayName: Lava Sword
 		Tooltip: ""
 	}
+
+	BeatingHeart: {
+		DisplayName: Beating Heart
+		Tooltip: ""
+	}
+
+	ShadewoodScythe: {
+		DisplayName: Shadewood Scythe
+		Tooltip: ""
+	}
+
+	EnchantedScythe: {
+		DisplayName: Enchanted Scythe
+		Tooltip: ""
+	}
+
+	EbonwoodScythe: {
+		DisplayName: Ebonwood Scythe
+		Tooltip: ""
+	}
+
+	BoneScythe: {
+		DisplayName: Bone Scythe
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -287,6 +312,12 @@ Projectiles: {
 	Rubble.DisplayName: Rubble
 	IceAura.DisplayName: Ice Aura
 	LavaSwordProjectile.DisplayName: Lava Sword Projectile
+	MiniHeart.DisplayName: Mini Heart
+	ShadewoodScytheProj.DisplayName: Shadewood Scythe Proj
+	EnchantedScytheProj.DisplayName: Enchanted Scythe Proj
+	EnchantedSpark.DisplayName: Enchanted Spark
+	EbonwoodScytheProj.DisplayName: Ebonwood Scythe Proj
+	BoneScytheProjectile.DisplayName: Bone Scythe Projectile
 }
 
 Buffs: {

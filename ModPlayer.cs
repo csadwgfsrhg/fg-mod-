@@ -26,7 +26,7 @@ namespace Fgmod
 {
     public class MyPlayer : ModPlayer
     {
-        public bool HarvestWeapon = false;
+
         public bool AmethystNecklace = false;
         public bool LuminescentNecklace = false;
         public bool TopazNecklace = false;

@@ -16,9 +16,12 @@ namespace Fgmod.Items.Harvester
         public override void SetStaticDefaults()
         {
             Item.width = 54;
-            Item.damage = 16;
+            Item.damage = 20;
             Item.height = 42;
             Item.rare = 1;
+            Item.useTime = 30;
+            Item.useAnimation = 30;
+            Item.shoot = ModContent.ProjectileType<ObsidianScytheProjectile>();
 
         }
 
@@ -35,11 +38,12 @@ namespace Fgmod.Items.Harvester
     }
     public class ObsidianScytheProjectile : ScytheProj
     {
+        public override string Texture => "Fgmod/Items/Harvester/ObsidianScythe";
         public override void SetStaticDefaults()
         {
             Projectile.width = 54;
             Projectile.height = 42;
-         
+            Projectile.timeLeft = 30;
         }
 
     }

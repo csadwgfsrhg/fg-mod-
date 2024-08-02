@@ -7,7 +7,7 @@ namespace Fgmod.Particles
 {
 	public class HellEmber : ModDust
 	{
-		public override void OnSpawn(Dust dust) {
+        public override void OnSpawn(Dust dust) {
 			dust.noGravity = false;
 			dust.scale *= 1f; 
 			dust.noLight = true;
@@ -23,14 +23,16 @@ namespace Fgmod.Particles
 
 			return false; // Return false to prevent vanilla behavior.
 		}
-        public override bool PreDraw(Dust dust)
-        {
-            Main.spriteBatch.End();
-            Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive, Main.DefaultSamplerState, DepthStencilState.None, RasterizerState.CullCounterClockwise, null, Main.Transform);
-            return true;
-        }
+   //     public override bool PreDraw(Dust dust)
+      //  {
+       //     Main.spriteBatch.End();
+          //  Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive, Main.DefaultSamplerState, DepthStencilState.None, RasterizerState.CullCounterClockwise, null, Main.Transform);
+          //  return true;
+   //     }
+
         public override Color? GetAlpha(Dust dust, Color lightColor)
         {
+            BlendState blendState = BlendState.Additive;
             return new Color(1f, 1f, 1f, 1f);
         }
 

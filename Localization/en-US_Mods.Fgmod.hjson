@@ -275,6 +275,46 @@ Items: {
 		DisplayName: Bone Scythe
 		Tooltip: ""
 	}
+
+	IronCleaver: {
+		DisplayName: Iron Cleaver
+		Tooltip: ""
+	}
+
+	PutridStomach: {
+		DisplayName: Putrid Stomach
+		Tooltip: ""
+	}
+
+	RottenCleaver: {
+		DisplayName: Rotten Cleaver
+		Tooltip: ""
+	}
+
+	BloodCrawlerLegs: {
+		DisplayName: Blood Crawler Legs
+		Tooltip: ""
+	}
+
+	BloodCrawlerLeg: {
+		DisplayName: Blood Crawler Leg
+		Tooltip: ""
+	}
+
+	TrapperCloak: {
+		DisplayName: Trapper Cloak
+		Tooltip: ""
+	}
+
+	TrapperHat: {
+		DisplayName: Trapper Hat
+		Tooltip: ""
+	}
+
+	TrapperPants: {
+		DisplayName: Trapper Pants
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -318,6 +358,12 @@ Projectiles: {
 	EnchantedSpark.DisplayName: Enchanted Spark
 	EbonwoodScytheProj.DisplayName: Ebonwood Scythe Proj
 	BoneScytheProjectile.DisplayName: Bone Scythe Projectile
+	IronCleaverProj.DisplayName: Iron Cleaver Proj
+	Belch.DisplayName: Belch
+	RottenCleaverProj.DisplayName: Rotten Cleaver Proj
+	SpiritSkull.DisplayName: Spirit Skull
+	BloodCrawlerLegsProj.DisplayName: Blood Crawler Legs Proj
+	BloodCrawlerLegProj.DisplayName: Blood Crawler Leg Proj
 }
 
 Buffs: {

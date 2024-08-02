@@ -11,8 +11,11 @@ namespace Fgmod.Items.Armor
 {
 		[AutoloadEquip(EquipType.Head)]
 	public class MoltenAlloyHelmet: ModItem
-	{
-		  public override void UpdateEquip(Player player)
+
+    {
+
+
+        public override void UpdateEquip(Player player)
         {
 
             player.AddBuff(ModContent.BuffType<EmberSpawner>(), 1);

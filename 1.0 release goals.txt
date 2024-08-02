@@ -35,6 +35,7 @@ harvester:
 
 	
 
+
 		
 Other stuff:
 	
@@ -42,6 +43,20 @@ Other stuff:
 
 	- summoner set????
 	
+=======
+Reworks:
+	-Fishing rods deal harvest damage and  will latch on to enemies and deal continuous damage until reeled,
+	reeling at right time causes phantom fish to spawn and hunger gain.  
+	-hellstone armor/items reworked
+	
+	enemies can be fished up when fishing now, with respective special drops (hopefuly one for every biome) :
+		-sea monster (forest) 
+penis
+		
+Other stuff:
+	- typholite set
+	- summoner set????
+ main
 
 
 Ideas:

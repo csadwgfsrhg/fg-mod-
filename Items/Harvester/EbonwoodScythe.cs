@@ -30,7 +30,7 @@ namespace Fgmod.Items.Harvester
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.Shadewood, 25);
+            recipe.AddIngredient(ItemID.Ebonwood, 25);
             recipe.AddTile(TileID.WorkBenches);
             recipe.Register();
         }

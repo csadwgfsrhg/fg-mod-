@@ -5,9 +5,10 @@ using Fgmod.Items.Accessories;
 using Fgmod.Items.Harvester;
 using Fgmod.Items.Ranged;
 using Fgmod.Projectiles;
-
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.GameContent;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -67,11 +68,13 @@ namespace Fgmod.GlobalClasses
     
     public class IceBlade : GlobalItem
     {
+       
         public override void SetDefaults(Item item)
         {
             if (item.type == ItemID.IceBlade)
             {
-                // Texture = ModLoader.GetTexture("Fgmod/Items/melee/IceBlade");
+                //  TextureAssets.Item[item.type] = ModContent.Request<Texture2D>(Fgmod.Items.Melee.IceBlade).Value;
+            //    Texture2D texture = "Fgmod/Items/Harvester/BoneScythe";
                 item.shootSpeed = 0;
                 item.damage = 18;
                 item.useTime = 80;
@@ -121,7 +124,7 @@ namespace Fgmod.GlobalClasses
                  Item.type == ItemID.IchorBullet || Item.type == ItemID.VenomArrow || Item.type == ItemID.VenomBullet || Item.type == ItemID.PartyBullet ||
                  Item.type == ItemID.NanoBullet || Item.type == ItemID.ExplodingBullet || Item.type == ItemID.GoldenBullet || Item.type == ItemID.BoneArrow ||
                  Item.type == ItemID.CrystalDart || Item.type == ItemID.IchorDart || Item.type == ItemID.EndlessQuiver || Item.type == ItemID.EndlessMusketPouch ||
-                 Item.type == ItemID.ShimmerArrow || Item.type == ItemID.CursedBullet)
+                 Item.type == ItemID.ShimmerArrow || Item.type == ItemID.CursedBullet || Item.type == ItemID.CrystalBullet || Item.type == ItemID.CursedDart)
             {
                 Item.damage = 0;
             }

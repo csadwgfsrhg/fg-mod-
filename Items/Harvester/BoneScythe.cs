@@ -26,7 +26,13 @@ namespace Fgmod.Items.Harvester
         }
 
 
-
+        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+        {
+         
+                    Projectile.NewProjectile(source, position, velocity.RotatedByRandom(3f), ModContent.ProjectileType<Projectiles.SpiritSkull>(), damage / 2, knockback, player.whoAmI);
+               
+            return true;
+        }
 
         public override void AddRecipes()
         {

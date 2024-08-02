@@ -3,19 +3,15 @@
 bugs:
 addtive dust messed up
 cleaver is hella messed up
-cant remove hell stone bar  recipe
 the sludge too easy
 harvester:
-	-hunger bar
-
 	2 pre hm harvester armor sets: 
 	-hunter set made of leather
-	-plague set made out of jungle materials, (demonite?)
+	-coral set
 
 	Harvesting weapons:
 		
 		cleavers:
-		- iron cleaver
 		- ice cleaver
 		- 1000 degree knife  
 		- typholite cleaver
@@ -27,53 +23,28 @@ harvester:
 		- coral scythe
 		- ebonwood/shadewood scythe 
 		- enchanted scythe 
-		- obsidian (shadow scale) scythe 
+		- obsidian  scythe 
 	Hunger items:
 		- baby dragon (post eow?)
-		- beating heart 
 		- healing orb (reusable upgrade to beating heart) 
-		- belch
 		- adreniline syringe 
-		- demon pact
+		- Body mutation: belch
+		- 
 		- worm treat 
 		- spirit animals 
 
-Bosses:
-	-2 phase early game blood moon boss
-	-dungeon spirit bone fish mini boss
-	-fishing mini bosses
 	
 
-world gen:
-	- ash in hell will mostly be replaced with basalt
-	-ash, hellstone are both getting resprited
-	-typholite generation in hell.
-
-Reworks:
-	-Fishing rods deal harvest damage and  will latch on to enemies and deal continuous damage until reeled,
-	reeling at right time causes phantom fish to spawn and hunger gain.  
-	-hellstone armor/items reworked
-	
-	enemies can be fished up when fishing now, with respective special drops (hopefuly one for every biome) :
-		-flesh walker (crimson)
-		-the sludge (corruption)
-		-sea monster (forest) 
 		
 Other stuff:
-	- obsidian/barbed arrows
+	
 	- typholite set
-	- marksmen set
-	- mana steal set
+
 	- summoner set????
-	- gem necklaces 
+	
 
 
 Ideas:
-enchanted sword nerf (range 10 blocks, 14 damage but peirces)
-star fury nerf (summons star on hit, 20 damage)
-frostbrand nerf (short range ice spike summons enemy within 6 blocks, slow attack speed, 17 dmg)
-comet (summons lightspeed stars at enemy within 7 block range, 20 dmg, recipe: frostbrand, star fury, 10 metiorite)
-ammo nerf ( ammo will not do damage anymore)
 wood golem summon (sentry that does aoe damage to enemies in its range, regen buff to players in range.)
 
 

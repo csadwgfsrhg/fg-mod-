@@ -7,7 +7,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 
-namespace Fgmod
+namespace Fgmod.GlobalClasses
 {
     public class Recipes : ModSystem
     {
@@ -29,16 +29,6 @@ namespace Fgmod
             RecipeGroup.RegisterGroup(nameof(ItemID.SilverBar), SilverBarRecipeGroup);
             RecipeGroup.RegisterGroup(nameof(ItemID.CopperBar), CopperBarRecipeGroup);
         }
-        public override void AddRecipes()
-        {
-
-            Recipe baseRecipe = Recipe.Create(ItemID.HellstoneBar);
-          //  baseRecipe.AddRecipeGroup("CopperBar", 2)
-           //  .AddIngredient(ItemID.Hellstone, 3)
-            // .AddIngredient(ItemID.Obsidian, 2)
-            // .AddTile(TileID.Hellforge)
-            //   .Register();
-
-        }
+       
     }
 }
